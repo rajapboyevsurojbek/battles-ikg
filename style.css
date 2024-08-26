@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #293462;
+  padding-top: 200px;
+}
+
+.bg {
+  margin: auto;
+  padding-bottom: 200px;
+}
+
+.wrapper,
+.mountain__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg__cream {
+  margin: auto;
+  width: 200px;
+  height: 300px;
+  background: #fff1c1;
+  border-radius: 165px 165px 50px 50px;
+  transition: 1s;
+  cursor: pointer;
+}
+.bg__cream:hover {
+  background: teal;
+  transition: 1s;
+  border-radius: 200px 200px 160px 160px;
+}
+
+.bg__shadow {
+  margin: auto;
+  width: 50px;
+  height: 30px;
+  background: #a64942;
+}
+.bg__stick {
+  margin: auto;
+  width: 50px;
+  height: 70px;
+  background: #fe5f55;
+  border-radius: 0 0 15px 15px;
+}
+
+.mountain__circle {
+  margin: 100px 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #d5a710;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.mountain__circle:hover {
+  background: #fff1c1;
+  transition: 0.7s;
+}
+
+.mountain__circle:hover .mountain__item {
+  background: #fe5f55;
+  bottom: -8%;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+.mountain__circle:hover .mountain__item-two {
+  background: #fe5f55;
+  transform: rotate(40deg);
+  bottom: -38%;
+  left: -14%;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.mountain__item {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transform: rotate(-45deg);
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.mountain__item-two {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transform: rotate(-40deg);
+  right: 0;
+  transition: 1s;
+}
+
+.ringtones {
+  background: #191919;
+  width: 100%;
+}
+
+.ringtones__wrapper {
+  margin: auto;
+  padding: 200px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ringtones-1 {
+  position: relative;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f2ad43;
+}
+.ringtones-2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 70px 70px 16px 16px;
+  background: #e08027;
+  z-index: 9;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.ringtones-2:hover {
+  background: rgba(255, 0, 0, 0.918);
+  transition: 0.8s;
+}
+
+.ringtones-3 {
+  position: relative;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #824b20;
+}
+
+.photo {
+  width: 100%;
+  background: #191919;
+}
+
+.photo__wrapper {
+  margin: auto;
+  padding: 200px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 3s;
+  cursor: pointer;
+}
+
+.photo__wrapper:hover {
+  background: #11c51a67;
+}
+
+.photo__one {
+  background: #f2ad43;
+  width: 200px;
+  height: 250px;
+  border-radius: 100px 100px 32px 32px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.photo-two {
+  background: #824b20;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -40%;
+  z-index: 4;
+}
+.photo-three {
+  background: #fff58f;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 25%;
+}
+.photo-four {
+  background: #e08027;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -40%;
+  z-index: 3;
+}
+
+.stair {
+  padding: 200px 0;
+  width: 100%;
+  background: #191919;
+}
+
+.door {
+  border-radius: 150px 150px 0 0;
+  width: 200px;
+  height: 300px;
+  background: #4f77ff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 10px;
+  transition: 1s;
+}
+
+.door:hover {
+  background: #635252;
+  transition: 0.5s;
+}
+
+.door__item:hover {
+  background: #4f77ff;
+  transition: 0.5s;
+}
+
+.door__item {
+  width: 30%;
+  height: 40px;
+  background: #191919;
+  transition: 1s;
+}
+
+.door__item:nth-child(2) {
+  width: 40%;
+}
+.door__item:nth-child(3) {
+  width: 60%;
+}
+.door__item:nth-child(4) {
+  width: 80%;
+}
